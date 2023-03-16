@@ -74,6 +74,7 @@ input {
     font-family: inherit;
     background-color: #1a1a1a;
     transition: border-color 0.25s;
+    color: rgba(255, 255, 255, 0.87);
 }
 
 #app {
