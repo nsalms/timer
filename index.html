@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="app">
-        <input id="input" type="time" step="1" placeholder="11" value="00:00:05">
+        <input id="input" type="text" placeholder="hh:mm:ss" value="00:00:05">
         <button onclick="start()">Start</button>
 
         <h1 id="clock">00:00:00</h1>
@@ -15,6 +15,21 @@
         <a target="_blank" href="https://github.com/nsalms/timer">Github</a>
     </div>
 
+    <script src="https://unpkg.com/imask"></script>
     <script src="index.js"></script>
+    <script>
+        var dateMask = IMask(
+            document.getElementById('input'),
+            {
+                mask: 'h:m:s',
+                lazy: false,
+                blocks: {
+                    h: { mask: IMask.MaskedRange, from: 0, to: 23, maxLength: 2, autofix: true },
+                    m: { mask: IMask.MaskedRange, from: 0, to: 59, maxLength: 2, autofix: true },
+                    s: { mask: IMask.MaskedRange, from: 0, to: 59, maxLength: 2, autofix: true },
+                }}
+            );
+
+    </script>
 </body>
 </html>

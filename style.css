@@ -1,6 +1,6 @@
 :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 24px;
     font-weight: 400;
 
@@ -49,7 +49,7 @@ h1 {
 button {
     border-radius: 8px;
     border: 1px solid transparent;
-    padding: 0.6em 1.2em;
+    padding: 1em 1.5em;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
@@ -68,7 +68,7 @@ button:focus-visible {
 input {
     border-radius: 8px;
     border: 1px solid rgba(255,2555,255, 0.3);
-    padding: 0.6em 1.2em;
+    padding: 1em 1.5em;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
@@ -81,17 +81,4 @@ input {
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-    a:hover {
-        color: #747bff;
-    }
-    button {
-        background-color: #f9f9f9;
-    }
 }
